@@ -60,7 +60,7 @@ export default function Recipes() {
         </div>
       </div>
       <div className="px-10 font-[500] my-10">
-        <h1 className="text-[39px]">Search Results</h1>
+        <h1 className="text-[39px]">Recipes Results</h1>
       </div>
       <div className="grid gap-5 lg:grid-cols-3 sm:grid-cols-1 mx-auto justify-items-center my-5">
         {currentRecipes?.map((recipe) => (
