@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
           <IoIosSearch />
           <input
             type="text"
-            placeholder="Search Recipe"
+            placeholder="Search Recipes"
             className="px-2 bg-gray-200 outline-none border-none flex-grow"
             value={searchQuery}
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
