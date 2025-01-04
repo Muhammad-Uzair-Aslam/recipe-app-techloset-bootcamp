@@ -32,14 +32,14 @@ export default function Recipes() {
   return (
     <div>
       <div className="text-center font-[600] my-5">
-        <h1 className="text-[39px]">Recent Recipes</h1>
+        <h1 className="text-[39px]">Search Recipes</h1>
       </div>
       <div>
         <div className="my-5 flex items-center mx-auto bg-gray-200 rounded-full px-3 py-2 w-[350px] md:w-[500px] h-[45px] relative">
           <IoIosSearch />
           <input
             type="text"
-            placeholder="Search Recipe"
+            placeholder="Search Recipes"
             className="px-2 bg-gray-200 outline-none border-none flex-grow"
             value={searchQuery}
             onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)} // Added type for event
@@ -60,7 +60,7 @@ export default function Recipes() {
         </div>
       </div>
       <div className="px-10 font-[500] my-10">
-        <h1 className="text-[39px]">Recipes Results</h1>
+        <h1 className="text-[39px]">Search Results</h1>
       </div>
       <div className="grid gap-5 lg:grid-cols-3 sm:grid-cols-1 mx-auto justify-items-center my-5">
         {currentRecipes?.map((recipe) => (
