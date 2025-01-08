@@ -12,10 +12,10 @@ interface CardProps {
 export default function HorizontalCard({ id, title, description, imgUrl, buttonText }: CardProps) {
   return (
     <div>
-      <div className="mx-auto overflow-hidden max-w-sm md:max-w-full flex flex-col md:flex-row my-8 w-3/4 md:w-[70%] rounded-[34px] bg-[#F5F2F2]">
+      <div className="mx-auto overflow-hidden md:max-w-full flex flex-col md:flex-row my-8 max-w-[365px] md:w-[80%] 2xl:w-[50%] rounded-[34px] bg-[#F5F2F2]">
         <div className="md:w-1/3 w-full mx-auto md:mx-0">
           <img
-            className="w-full h-52 object-cover rounded-t-[34px] md:rounded-l-[34px] md:rounded-t-none" // Ensures image stays same size
+            className="w-full h-48 md:h-64 2xl:h-[350px] object-cover rounded-t-[34px] md:rounded-l-[34px] md:rounded-t-none" // Ensures image stays same size
             src={imgUrl}
             alt={title}
           />

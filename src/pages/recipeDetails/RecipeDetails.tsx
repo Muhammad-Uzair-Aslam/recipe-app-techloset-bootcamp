@@ -13,7 +13,7 @@ export default function RecipeDetails() {
     return <div>Recipe not found</div>;
   }
   
-  const { name, thumbnail_url, description, nutrition, instructions } = selectedRecipe;
+  const { name, thumbnail_url, nutrition, instructions } = selectedRecipe;
   const ingredients = selectedRecipe.sections[0]?.components.map((component) => component.ingredient) || [];
 
   return (
@@ -29,11 +29,8 @@ export default function RecipeDetails() {
           <h1 className="text-4xl font-[700] text-[40px] mb-4">{name}</h1>
         </div>
       </div>
-      <div className="text-center my-10">
-        <h2 className="text-[20px]">{description}</h2>
-      </div>
 
-      <div className="my-10 mx-20 md:mx-40">
+      <div className="my-10 mx-12 md:mx-24">
         <h3 className="text-[24px] font-bold">Ingredients</h3>
         <ul className="list-disc pl-5">
           {ingredients && ingredients.length > 0 ? (
@@ -48,7 +45,7 @@ export default function RecipeDetails() {
         </ul>
       </div>
 
-      <div className="my-10 mx-20 md:mx-40">
+      <div className="my-10 mx-12 md:mx-24">
         <h3 className="text-[24px] font-bold">Instructions</h3>
         <ol className="list-decimal pl-5">
           {instructions && instructions.length > 0 ? (
@@ -62,7 +59,7 @@ export default function RecipeDetails() {
           )}
         </ol>
       </div>
-      <div className="my-10 mx-20 md:mx-40">
+      <div className="my-10 mx-12 md:mx-24">
         <h3 className="text-[24px] font-bold">Nutrition Information</h3>
         <ul className="list-disc pl-5">
           <li><strong>Calories</strong>: {nutrition?.calories}</li>

@@ -63,7 +63,7 @@ export default function Home() {
           <div className="text-center font-[700] my-10">
             <h1 className="text-[39px]">Popular Recipes</h1>
           </div>
-          <div className="grid gap-5 lg:grid-cols-3 md:gap-x-10 mx-auto justify-items-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 mx-auto justify-items-center w-[90%] 2xl:w-[55%]">
           {popularRecipes?.length === 0 ? (
             <p className="text-center text-gray-500">No popular recipes available.</p>
           ) : (
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
           {
             CurrentRecentRecipes?.map((recipe) => (
-              <div key={recipe?.id}>
+              <div className="mx-5" key={recipe?.id}>
                 <HorizontalCard
                   id={recipe?.id}
                   title={recipe?.name}

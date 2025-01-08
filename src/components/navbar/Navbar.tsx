@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
   return (
     <div>
       <div className="w-full h-[30px] bg-[#FFDB63]"></div>
-      <div className="w-full flex justify-between items-center h-[113px] px-4 sm:px-8 text-[26px]">
+      <div className="w-full flex justify-between items-center h-[80px] md:h-[113px] px-4 sm:px-8 text-[26px]">
         <div className="flex items-center font-[500]">
           <BsCupHot />
           <span className="px-2 hidden sm:block">Delícias à Mesa</span>
