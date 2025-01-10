@@ -63,7 +63,7 @@ export default function Home() {
           <div className="text-center font-[700] my-10">
             <h1 className="text-[39px]">Popular Recipes</h1>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 mx-auto justify-items-center w-[90%] 2xl:w-[55%]">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 mx-auto gap-3 justify-items-center w-[90%] 2xl:w-[80%]">
           {popularRecipes?.length === 0 ? (
             <p className="text-center text-gray-500">No popular recipes available.</p>
           ) : (

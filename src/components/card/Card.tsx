@@ -11,14 +11,16 @@ interface CardProps {
 
 const Card = ({ id, imageUrl, title, description, buttonText }: CardProps) => {
   return (
-    <div className="my-3 mx-auto md:mx-2 max-w-[365px] xl:max-w-[450px] 2xl:max-w-[600px] h-[470px] rounded-3xl overflow-hidden bg-[#F5F2F2]">
-      <img src={imageUrl} alt={title} className="w-full h-48" />
-      <div className="p-6">
-        <h2 className="text-[28px] py-1 font-[700]">{title}</h2>
-        <p className="text-[19px] py-3 text-gray-700 font-[400]">
+    <div className="   mx-auto md:mx-2 max-w-[365px] xl:max-w-[450px] 2xl:max-w-[600px] h-[500px] rounded-3xl bg-[#F5F2F2] flex flex-col justify-between pb-[40px] w-full">
+      <img src={imageUrl} alt={title} className="w-full h-48  rounded-t-3xl" />
+      <div className="px-4 w-full flex flex-col  justify-center gap-[18px]">
+        <h2 className="text-[28px]  font-[700]">{title}</h2>
+        <p className="text-[19px]  text-gray-700 font-[400]">
           {description}
         </p>
-        <div className="my-2">
+        
+      </div>
+      <div className="mx-4 pb-[">
           <Link
             to={`/recipes/${id}`}
             className="px-6 py-1 w-40 bg-[#FFDB63] rounded-full text-center"
@@ -26,7 +28,6 @@ const Card = ({ id, imageUrl, title, description, buttonText }: CardProps) => {
             {buttonText}
           </Link>
         </div>
-      </div>
     </div>
   );
 };

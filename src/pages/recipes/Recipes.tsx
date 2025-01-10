@@ -62,7 +62,7 @@ export default function Recipes() {
       <div className="px-10 font-[500] my-10">
         <h1 className="text-[39px]">Search Results</h1>
       </div>
-      <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] 2xl:w-[60%]  mx-auto justify-items-center my-5">
+      <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] 2xl:w-[80%]  mx-auto justify-items-center my-5">
         {currentRecipes?.map((recipe) => (
           <div key={recipe.id}>
             <Card
