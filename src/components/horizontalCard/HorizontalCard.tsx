@@ -15,7 +15,7 @@ export default function HorizontalCard({ id, title, description, imgUrl, buttonT
       <div className="mx-auto overflow-hidden md:max-w-full flex flex-col md:flex-row my-8 max-w-[365px] md:w-[80%] 2xl:w-[75%] rounded-3xl bg-[#F5F2F2]">
         <div className="md:w-1/3 w-full mx-auto md:mx-0">
           <img
-            className="w-full h-48 md:h-64 2xl:h-[350px] object-cover rounded-t-[34px] md:rounded-l-[34px] md:rounded-t-none" // Ensures image stays same size
+            className="w-full h-48 md:h-80 2xl:h-[350px] object-cover rounded-t-3xl md:rounded-l-3xl md:rounded-t-none" // Ensures image stays same size
             src={imgUrl}
             alt={title}
           />
